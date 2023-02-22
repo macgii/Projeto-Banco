@@ -6,7 +6,6 @@ import java.util.Scanner;
 import conta.model.Conta;
 import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
-import conta.util.Cores;
 
 public class Menu {
 	public static void main(String[] args) {
@@ -59,12 +58,12 @@ public class Menu {
 		
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND + "*****************************************************");
+			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("                BANCO DO BRAZIL COM Z                ");
+			System.out.println("                      Gi's Bank                      ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
-			System.out.println(Cores.TEXT_WHITE + Cores.ANSI_BLACK_BACKGROUND + "                                                     ");
+			System.out.println("                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar todas as Contas               ");
 			System.out.println("            3 - Buscar Conta por Numero              ");
@@ -77,12 +76,12 @@ public class Menu {
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
-			System.out.println("                                                     " + Cores.TEXT_RESET);
+			System.out.println("                                                     ");
 
 			opcao = leia.nextInt();
 
 			if (opcao == 9) {
-				System.out.println("\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+				System.out.println("\nGi's Bank - O seu sonho começa aqui!");
 				leia.close();
 				System.exit(0);
 			}
@@ -240,14 +239,12 @@ public class Menu {
 
 		try {
 
-			System.out.println(Cores.TEXT_RESET + "\n\nPressione Enter para Continuar...");
+			System.out.println("\n\nPressione Enter para Continuar...");
 			System.in.read();
 
 		} catch (IOException e) {
 
 			System.out.println("Você pressionou uma tecla diferente de enter!");
-
 		}
 	}
-
 }
